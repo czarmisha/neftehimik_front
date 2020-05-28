@@ -19,13 +19,17 @@
                 <img src="images/logo.png" width="50" height="50" alt="" loading="lazy">
                 <span class="logo-text">Neftehimik</span>
             </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+            <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </button> -->
+            <input type="checkbox" id="burger">
+            <label for="burger" class="label">
+                <span class="span"></span>
+            </label>
+            <!-- collapse navbar-collapse -->
+            <div class="burger-menu" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Главная</a>
@@ -515,12 +519,12 @@
         </section>
     </main>
     <footer>
-            <ul class="footer-sicial w-100 d-flex justify-content-center align-items-center">
-                <li><a href="" class="slidel-social-link telegram"></a></li>
-                <li><a href="" class="slidel-social-link facebook"></a></li>
-                <li><a href="" class="slidel-social-link instagram"></a></li>
-                <li><a href="" class="slidel-social-link email"></a></li>
-            </ul>
+        <ul class="footer-sicial w-100 d-flex justify-content-center align-items-center">
+            <li><a href="" class="slidel-social-link telegram"></a></li>
+            <li><a href="" class="slidel-social-link facebook"></a></li>
+            <li><a href="" class="slidel-social-link instagram"></a></li>
+            <li><a href="" class="slidel-social-link email"></a></li>
+        </ul>
     </footer>
 
 
@@ -535,8 +539,6 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            console.log('asd');
-
             $('.multiple-items').slick({
                 infinite: true,
                 draggable: true,
@@ -581,6 +583,15 @@
                 ],
             });
         });
+    </script>
+    <script type="text/javascript">
+        label = document.querySelector('.label');
+        body = document.querySelector('body');
+
+        label.addEventListener('click', function () {
+            if (burger.checked) body.classList.remove('overflow');
+            else body.classList.add('overflow');
+        })
     </script>
 </body>
 
