@@ -1172,7 +1172,7 @@ header .btn {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 80%;
+        height: 60%;
     }
 
     .nav-item-text {
@@ -1355,7 +1355,7 @@ header .btn {
     }
 
     .navbar-collapse .form-inline {
-        width: 50%;
+        width: 80%;
         flex-direction: column !important;
         align-items: center !important;
         margin-top: 30px !important; 
