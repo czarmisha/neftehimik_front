@@ -1390,19 +1390,20 @@ header .btn {
 
 @media(max-width:600px) {
     .advantages h2 {
-        font-size: 25px;
-    }
-
-    .advantages h2::before {
         font-size: 30px;
     }
 
+    .advantages h2::before {
+        display: none;
+    }
+
     .reviews h2::before {
-        top: -110%;
+        /* top: -110%;
         right: 75%;
         color: rgba(104, 104, 104, 0.1);
         font-size: 46px;
-        width: 100%;
+        width: 100%; */
+        display: none;
     }
 }
 
@@ -1446,53 +1447,60 @@ header .btn {
     }
 
     .catalog h2::before {
-        right: -50%;
+        /* right: -50%;
         font-size: 28px;
-        width: 200%;
+        width: 200%; */
+        display: none;
     }
-
+    .about-us{
+        padding-bottom: 50px;
+    }
     .catalog h2 {
-        font-size: 21px;
+        font-size: 30px;
     }
 
     .day-project-text h2 {
-        font-size: 21px;
+        font-size: 30px;
     }
 
     .day-project-text h2::before {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .about-us-text h2 {
-        font-size: 21px;
+        font-size: 30px;
     }
 
     .about-us-text h2::before {
-        font-size: 28px;
+        display: none;
     }
 
     .reviews h2 {
-        font-size: 21px;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
     }
-
+    .reviews{
+        padding: 50px 0;
+    }
     .reviews h2::before {
-        font-size: 28px;
+        display: none;
     }
 
     .news h2 {
-        font-size: 21px;
+        font-size: 30px;
     }
 
     .news h2::before {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .contact h2 {
-        font-size: 21px;
+        font-size: 30px;
     }
 
     .contact h2::before {
-        font-size: 28px;
+        display: none;
     }
 
     .review-text {
@@ -1571,14 +1579,6 @@ header .btn {
     .about-us-shadows::after {
         bottom: 78%;
         height: 20%;
-    }
-
-    .advantages h2 {
-        font-size: 20px;
-    }
-
-    .advantages h2::before {
-        font-size: 22px;
     }
 }
 
