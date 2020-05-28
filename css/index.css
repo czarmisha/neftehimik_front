@@ -1246,6 +1246,14 @@ header .btn {
         left: -30px; */
         display: none;
     }
+    .navbar-collapse .form-inline input{
+        background-color: #fff;
+    }
+    .navbar-collapse .form-inline button{
+        background-color: #fff;
+        padding: 9px 12px !important; 
+        line-height: 20px !important;
+    }
 }
 
 @media(max-width:991px) {
