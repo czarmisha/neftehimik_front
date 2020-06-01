@@ -1,4 +1,7 @@
 @import 'fonts.css';
+@import 'navbar.css';
+@import 'news_section.css';
+@import 'footer.css';
 
 
 * {
@@ -23,136 +26,8 @@ body {
     overflow: hidden;
 }
 
-.header_navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-}
-
-.burger-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.my-navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.header_navbar .form-inline {
-    flex-wrap: nowrap;
-}
-
-/* header {
-    min-height: 100vmin;
-    max-height: 100vh;
-} */
 
 /*! ------------------------------------------------------------ HEADER start -------------------------------------------------------------- */
-/*? ------------------------------------------------------------ NAV start -------------------------------------------------------------- */
-/* .span {
-    display: block;
-    background-image: url(../images/burger-green.png);
-    width: 33px;
-    height: 25px;
-} */
-
-/* .navbar-toggler:focus {
-    outline: none !important;
-} */
-
-/* .navbar-toggler.collapsed .navbar-toggler-icon {
-    background-image: url(../images/burger-green.png);
-} */
-
-header .navbar {
-    padding: 10px 38px;
-    background-color: #E5E5E5;
-}
-
-.navbar-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo-text {
-    text-transform: uppercase;
-    color: #366232;
-    font-family: 'Montserrat Bold';
-    font-size: 12px;
-    margin-top: 8px;
-}
-
-.nav-item {
-    margin: 0 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-item-text {
-    margin: 0 15px;
-}
-
-.nav-link {
-    color: #6B6B6B;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: 'BebasNeue-Bold';
-    padding: 0;
-}
-
-.nav-link:hover {
-    color: #7FB154;
-}
-
-.navbar-text,
-.navbar-text a {
-    color: rgba(107, 107, 107, 0.5);
-    text-transform: uppercase;
-    font-family: 'BebasNeue-Regular';
-    font-size: 20px;
-}
-
-.navbar-text a:hover {
-    color: rgba(107, 107, 107, 0.5);
-}
-
-.navbar-text img {
-    margin-right: 10px;
-}
-
-header .form-control {
-    background: #DBDBDB;
-    padding: 15px;
-    border: none;
-    border-radius: 0;
-}
-
-header .form-control::placeholder {
-    font-size: 16px;
-    line-height: 19px;
-    color: rgba(107, 107, 107, 0.5);
-    font-family: 'SF UI Regular';
-}
-
-header .btn {
-    background: #7FB154;
-    border: none;
-    border-radius: 0;
-    color: white;
-    font-size: 16px;
-    line-height: 19px;
-    font-family: 'SF UI Regular';
-    color: #FFFFFF;
-    padding: 9px 15px;
-}
-
-/*? ------------------------------------------------------------ NAV end -------------------------------------------------------------- */
 
 .slider-social {
     width: 100%;
@@ -164,7 +39,6 @@ header .btn {
 }
 
 .header-slider {
-    /* max-height: 750px; */
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
@@ -173,50 +47,6 @@ header .btn {
     margin: 20px 0;
 }
 
-.slidel-social-link {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #686868;
-    transition: .3s;
-}
-
-.slidel-social-link.telegram {
-    background: url(../images/telegram.png)no-repeat center center;
-}
-
-.slidel-social-link.facebook {
-    background: url(../images/facebook.png)no-repeat center center;
-}
-
-.slidel-social-link.instagram {
-    background: url(../images/instagram.png)no-repeat center center;
-}
-
-.slidel-social-link.email {
-    background: url(../images/email.png)no-repeat center center;
-}
-
-.slidel-social-link.facebook:hover {
-    border: 1px solid #7FB154;
-    background: url(../images/facebook-hover.png)no-repeat center center;
-}
-
-.slidel-social-link.telegram:hover {
-    border: 1px solid #7FB154;
-    background: url(../images/telegram-hover.png)no-repeat center center;
-}
-
-.slidel-social-link.instagram:hover {
-    border: 1px solid #7FB154;
-    background: url(../images/instagram-hover.png)no-repeat center center;
-}
-
-.slidel-social-link.email:hover {
-    border: 1px solid #7FB154;
-    background: url(../images/email-hover.png)no-repeat center center;
-}
 
 .header-slider-buttons {
     background-color: #7FB154;
@@ -852,88 +682,9 @@ header .btn {
 
 /*! ------------------------------------------------------------ REVIEWS end -------------------------------------------------------------- */
 /*! ------------------------------------------------------------ NEWS start -------------------------------------------------------------- */
-.news {
-    padding: 100px 0;
-}
 
-.news h2 {
-    font-size: 36px;
-    line-height: 36px;
-    color: #7FB154;
-    font-family: 'BebasNeue-Regular';
-    margin-bottom: 70px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
 
-.news h2::before {
-    content: 'НОВОСТИ';
-    position: absolute;
-    top: -110%;
-    right: 0%;
-    color: rgba(104, 104, 104, 0.1);
-    font-size: 60px;
-    width: 100%;
-}
 
-.news-box,
-.news-box-min {
-    margin-bottom: 50px;
-}
-
-.news-box .news-poster {
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.news h3 a {
-    margin-bottom: 30px;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    font-family: 'BebasNeue-Bold';
-    color: #6B6B6B;
-    text-align: left;
-}
-
-.news p {
-    font-size: 18px;
-    line-height: 21px;
-    font-family: 'SF UI Regular';
-    color: #939393;
-}
-
-.news-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(26, 69, 0, 0.6);
-    transform: scale(0);
-    transition: .3s;
-}
-
-.news-poster:hover .news-hover {
-    transform: scale(1);
-}
-
-.all-news a {
-    font-size: 16px;
-    line-height: 16px;
-    text-decoration-line: underline;
-    font-family: 'BebasNeue-Regular';
-    color: #6B6B6B;
-    text-decoration: underline !important;
-}
-
-.all-news {
-    margin-top: 40px;
-}
 
 /*! ------------------------------------------------------------ NEWS end -------------------------------------------------------------- */
 /*! ------------------------------------------------------------ CONTACT start -------------------------------------------------------------- */
@@ -1023,28 +774,12 @@ header .btn {
 /*! ------------------------------------------------------------ CONTACT end -------------------------------------------------------------- */
 /*! ------------------------------------------------------------ FOOTER start -------------------------------------------------------------- */
 
-.footer-sicial {
-    padding: 35px 0;
-    background: #fff;
-}
-
-.footer-sicial li {
-    margin: 0 10px;
-}
 
 /*! ------------------------------------------------------------ FOOTER end -------------------------------------------------------------- */
 
 
-#burger {
-    display: none;
-}
 
-.label {
-    display: none;
-}
-
-
-/*! ------------------------------------------------------------ MEDIA start -------------------------------------------------------------- */
+/*!  media  */
 @media (max-width: 1600px) {
     .nav-item {
         margin: 0 15px;
@@ -1727,4 +1462,12 @@ header .btn {
         width: 93%;
     }
 
+}
+
+@media(max-width:337px) {
+    .about-us-shadows::after {
+        bottom: 75%;
+        height: 16%;
+        width: 92%;
+    }
 }
