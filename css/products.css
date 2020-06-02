@@ -1,7 +1,7 @@
 @import 'fonts.css';
 @import 'navbar.css';
 @import 'footer.css';
-@import 'contact_section.css';
+
 
 * {
     margin: 0;
@@ -24,20 +24,93 @@ body {
 .overflow {
     overflow: hidden;
 }
-.form-text{
-    width: 40%;
-    margin-bottom: 15px;
+
+.products {
+    padding: 50px 0 100px;
 }
-.form-info{
-    padding-top: 50px;
+
+.product_by_category_box {
+    background: #E3E3E3;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    position: relative;
 }
-.contact-form{
-    padding-top: 50px;
+
+.product_by_category_box h2 {
+    margin-top: 60px;
+    font-size: 22px;
+    line-height: 20px;
+    font-family: 'BebasNeue-Bold';
+    color: #6B6B6B;
 }
-.contact-map{
-    min-height: 400px;
-    height: 100%;
+
+.product_by_category_box a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
+
+.products .card {
+    border: none;
+    border-radius: 0;
+}
+
+.products .card-header {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.products .card-header button {
+    background: #E3E3E3;
+    background-image: url(../images/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 95%;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #7FB154;
+    font-family: 'BebasNeue-Bold';
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+}
+
+.products .card-header button:not(.collapsed) {
+    background: #6B6B6B;
+    background-image: url(../images/arrow-up.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 95%;
+}
+
+.products .card-body {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+.list-group{
+    border-radius: 0;
+}
+
+.list-group-item.active {
+    background: #C4C4C4;
+    color: #fff;
+}
+
+.list-group-item {
+    background: #E3E3E3;
+    padding: 10px 30px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'BebasNeue-Bold';
+    color: #6B6B6B;
+    border: none;
+}
+
 
 
 
@@ -168,7 +241,8 @@ body {
         bottom: -30px;
         left: -30px;
     }
-    .contact h2::before{
+
+    .contact h2::before {
         display: none;
     }
 }
@@ -462,13 +536,17 @@ body {
         bottom: 44%;
         height: 45%;
     }
-    .form-info{
+
+    .form-info {
         flex-wrap: wrap;
     }
-    .form-text{
+
+    .form-text {
         width: 100%;
     }
-    .form-adres,.form-phone{
+
+    .form-adres,
+    .form-phone {
         margin-top: 30px;
     }
 }
@@ -744,3 +822,4 @@ body {
         width: 92%;
     }
 }
+/*! не все медиа нужны  */

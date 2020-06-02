@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/products.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="d-flex flex-column">
+        <nav class="header_navbar">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="50" height="50" alt="" loading="lazy">
+                <span class="logo-text">Neftehimik</span>
+            </a>
+            <input type="checkbox" id="burger">
+            <label for="burger" class="label">
+                <span class="span"></span>
+            </label>
+            <div class="burger-menu" id="navbarSupportedContent">
+                <ul class="my-navbar mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news_all.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item nav-item-text">
+                        <p class="navbar-text"><img src="images/clock.png" alt="">Пн-суб 09:00 - 18:00</p>
+                    </li>
+                    <li class="nav-item nav-item-text">
+                        <p class="navbar-text"><img src="images/tel.png" alt=""><a href="tel:+998903554256">+998
+                                (90)
+                                355-42-56</a></p>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 mb-5">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Разворачиваемая панель #1
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+
+                                        <div class="list-group" id="list-tab" role="tablist">
+                                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                                data-toggle="list" href="#list-home" role="tab"
+                                                aria-controls="home">Home</a>
+                                            <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                                data-toggle="list" href="#list-profile" role="tab"
+                                                aria-controls="profile">Profile</a>
+                                            <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                                data-toggle="list" href="#list-messages" role="tab"
+                                                aria-controls="messages">Messages</a>
+                                            <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                                data-toggle="list" href="#list-settings" role="tab"
+                                                aria-controls="settings">Settings</a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Разворачиваемая панель #3
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, ex!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="products_by_category">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                    aria-labelledby="list-home-list">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="product_single.html"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div
+                                                class="product_by_category_box d-flex flex-column align-items-center justify-content-between">
+                                                <img src="images/product.png" alt="">
+                                                <h2>болты без покрытия</h2>
+                                                <a href="#"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                    aria-labelledby="list-messages-list">3</div>
+                                <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                    aria-labelledby="list-settings-list">4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-sicial w-100 d-flex justify-content-center align-items-center">
+            <li><a href="" class="slidel-social-link telegram"></a></li>
+            <li><a href="" class="slidel-social-link facebook"></a></li>
+            <li><a href="" class="slidel-social-link instagram"></a></li>
+            <li><a href="" class="slidel-social-link email"></a></li>
+        </ul>
+    </footer>
+
+
+
+
+    <script src="bootstrap/js/jQuery.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/burger.js"></script>
+</body>
+
+</html>

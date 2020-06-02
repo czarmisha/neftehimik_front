@@ -1,7 +1,7 @@
 @import 'fonts.css';
 @import 'navbar.css';
 @import 'footer.css';
-@import 'contact_section.css';
+
 
 * {
     margin: 0;
@@ -19,25 +19,86 @@ ul {
 
 body {
     background-color: #f1f1f1;
+    position: relative;
 }
 
 .overflow {
     overflow: hidden;
 }
-.form-text{
-    width: 40%;
-    margin-bottom: 15px;
+
+.products {
+    padding: 50px 0 100px;
 }
-.form-info{
-    padding-top: 50px;
+
+.product_by_category_box {
+    background: #E3E3E3;
+    padding: 40px 0;
+    margin-bottom: 30px;
+    position: relative;
 }
-.contact-form{
-    padding-top: 50px;
+
+.product_by_category_box h2 {
+    margin-top: 60px;
+    font-size: 22px;
+    line-height: 20px;
+    font-family: 'BebasNeue-Bold';
+    color: #6B6B6B;
 }
-.contact-map{
-    min-height: 400px;
-    height: 100%;
+
+.product_by_category_box a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
+
+.products h1 {
+    font-family: 'BebasNeue-Bold';
+    font-size: 40px;
+    line-height: 50px;
+    color: #7FB154;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.products h3 {
+    font-size: 26px;
+    line-height: 26px;
+    font-family: 'BebasNeue-Bold';
+    color: #6B6B6B;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.products_detail {
+    font-size: 18px;
+    line-height: 39px;
+    font-family: 'SF UI Regular';
+    color: #6B6B6B;
+    margin-bottom: 12px;
+}
+
+.product_order {
+    background: #7FB154;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'SF UI Regular';
+    color: #FFFFFF;
+    margin-top: 30px;
+    border: none;
+
+}
+.product_order:focus{
+    outline: none;
+}
+.products_text{
+    margin-top: 40px;
+    margin-bottom: 120px;
+}
+
+
 
 
 
@@ -168,7 +229,8 @@ body {
         bottom: -30px;
         left: -30px;
     }
-    .contact h2::before{
+
+    .contact h2::before {
         display: none;
     }
 }
@@ -462,13 +524,17 @@ body {
         bottom: 44%;
         height: 45%;
     }
-    .form-info{
+
+    .form-info {
         flex-wrap: wrap;
     }
-    .form-text{
+
+    .form-text {
         width: 100%;
     }
-    .form-adres,.form-phone{
+
+    .form-adres,
+    .form-phone {
         margin-top: 30px;
     }
 }
@@ -704,6 +770,9 @@ body {
     .about-us-shadows::after {
         bottom: 62%;
         height: 25%;
+    }
+    .products h1{
+        font-size: 35px;
     }
 }
 
