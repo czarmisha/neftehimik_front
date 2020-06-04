@@ -3,6 +3,8 @@
 @import 'news_section.css';
 @import 'footer.css';
 @import 'contact_section.css';
+@import 'day_project_section.css';
+@import 'about_us_section.css';
 
 
 * {
@@ -171,79 +173,7 @@ body {
 
 /*! ------------------------------------------------------------ HEADER end -------------------------------------------------------------- */
 /*! ------------------------------------------------------------ ABOUT US start -------------------------------------------------------------- */
-.about-us {
-    padding: 90px 0;
-}
 
-.about-us h2 {
-    font-size: 36px;
-    line-height: 36px;
-    color: #7FB154;
-    font-family: 'BebasNeue-Regular';
-    margin-bottom: 70px;
-    position: relative;
-}
-
-.about-us h2::before {
-    content: 'О КОМПАНИИ';
-    position: absolute;
-    top: -100%;
-    right: -150%;
-    color: rgba(104, 104, 104, 0.1);
-    font-size: 60px;
-    width: 200%;
-}
-
-.about-us-text p {
-    margin-bottom: 35px;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: 'SF UI Regular';
-    color: #6B6B6B;
-}
-
-.about-us-statistic {
-    margin-top: 90px;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.statistic-number {
-    font-size: 50px;
-    line-height: 50px;
-    color: #6B6B6B;
-    font-family: 'BebasNeue-Regular';
-    margin-right: 10px;
-}
-
-.statistic-text {
-    font-size: 22px;
-    line-height: 22px;
-    font-family: 'BebasNeue-Regular';
-    color: #6B6B6B;
-    text-transform: uppercase;
-}
-
-
-.about-us-shadows::before {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    border: 6px solid rgba(107, 107, 107, 0.05);
-    top: -7%;
-    left: -9%;
-}
-
-.about-us-shadows::after {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    border: 6px solid #7FB154;
-    bottom: -7%;
-    right: -9%;
-}
 
 /*! ------------------------------------------------------------ ABOUT US end -------------------------------------------------------------- */
 /*! ------------------------------------------------------------ CATALOG start -------------------------------------------------------------- */
@@ -412,68 +342,6 @@ body {
 /*! ------------------------------------------------------------ DAY PROJECT start -------------------------------------------------------------- */
 
 
-.day-project {
-    padding: 100px 0 50px;
-    background-color: rgba(196, 196, 196, 0.2);
-}
-
-.day-project-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.day-project-text h2 {
-    font-size: 36px;
-    line-height: 36px;
-    color: #7FB154;
-    font-family: 'BebasNeue-Regular';
-    margin-bottom: 70px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.day-project-text h2::before {
-    content: 'ПРОЕКТ ДНЯ';
-    position: absolute;
-    top: -110%;
-    right: 15%;
-    color: rgba(104, 104, 104, 0.1);
-    font-size: 60px;
-    width: 100%;
-}
-
-.day-project-text h3 {
-    font-size: 25px;
-    line-height: 50px;
-    color: #6B6B6B;
-    font-family: 'BebasNeue-Bold';
-    margin-bottom: 30px;
-}
-
-.day-project-text ul li {
-    font-size: 16px;
-    line-height: 22px;
-    color: rgba(107, 107, 107, 0.6);
-    font-family: 'SF UI Regular';
-    margin-bottom: 20px;
-}
-
-.day-project-text a {
-    display: block;
-    color: white;
-    background-color: #7FB154;
-    font-size: 16px;
-    line-height: 19px;
-    font-family: 'SF UI Regular';
-    padding: 20px 50px;
-    margin-top: 45px;
-}
-
-.day-project img {
-    box-shadow: 100px -50px rgba(127, 177, 84, 0.5);
-}
 
 /*! ------------------------------------------------------------ DAY PROJECT end -------------------------------------------------------------- */
 /*! ------------------------------------------------------------ ADVANTAGES start -------------------------------------------------------------- */

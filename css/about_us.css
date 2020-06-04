@@ -1,7 +1,8 @@
 @import 'fonts.css';
 @import 'navbar.css';
+@import 'about_us_section.css';
+@import 'day_project_section.css';
 @import 'footer.css';
-
 
 * {
     margin: 0;
@@ -19,172 +20,62 @@ ul {
 
 body {
     background-color: #f1f1f1;
-    position: relative;
 }
 
 .overflow {
     overflow: hidden;
 }
 
-.products {
-    padding: 50px 0 100px;
+.day-project-text h2::before {
+    content: 'НАШИ ЦЕННОСТИ';
 }
 
-.product_by_category_box {
-    background: #E3E3E3;
-    padding: 40px 0;
-    margin-bottom: 30px;
-    position: relative;
+.day-project img {
+    box-shadow: -80px -40px #E5E5E5;
 }
 
-.product_by_category_box h2 {
-    margin-top: 60px;
+.day-project {
+    background-color: transparent;
+}
+
+.day-project-text h3 {
     font-size: 22px;
-    line-height: 20px;
-    font-family: 'BebasNeue-Bold';
-    color: #6B6B6B;
+    margin-bottom: 10px;
 }
 
-.product_by_category_box a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.products h1 {
-    font-family: 'BebasNeue-Bold';
+.day-project-text .number {
     font-size: 40px;
     line-height: 50px;
-    color: #7FB154;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-}
-
-.products h3 {
-    font-size: 26px;
-    line-height: 26px;
     font-family: 'BebasNeue-Bold';
     color: #6B6B6B;
-    margin-bottom: 12px;
-    text-transform: uppercase;
 }
-
-.products_detail {
-    font-size: 18px;
-    line-height: 39px;
-    font-family: 'SF UI Regular';
-    color: #6B6B6B;
-    margin-bottom: 12px;
+.day-project-text ul li {
+    font-size: 14px;
+    margin-bottom: 0px;
 }
-
-.product_order {
-    background: #7FB154;
-    padding: 15px;
-    font-size: 16px;
-    line-height: 19px;
-    font-family: 'SF UI Regular';
-    color: #FFFFFF;
-    margin-top: 30px;
-    border: none;
-
+.day-project-text ul{
+    width: 100%;
 }
-
-.product_order:focus {
-    outline: none;
+.partners {
+    padding: 50px;
+    background: #E8E8E8;
 }
-
-.products_text {
-    margin-top: 40px;
-    margin-bottom: 120px;
-}
-
-.modal {
-    padding-right: 0 !important;
-}
-
-.modal-image,
-.modal-form {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.modal-form {
-    padding: 60px;
-}
-
-.modal form button {
-    background: #7FB154;
-    padding: 15px 55px;
-    font-size: 16px;
-    line-height: 19px;
-    font-family: 'SF UI Regular';
-    color: #FFFFFF;
-    border: none;
-    margin-top: 25px;
-}
-
-.modal form input,
-.modal form textarea {
-    background: #DBDBDB;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 0;
-}
-
-.modal form input::placeholder,
-.modal form textarea::placeholder {
-    font-size: 16px;
-    line-height: 19px;
-    font-family: 'SF UI Regular';
-    color: rgba(107, 107, 107, 0.5);
-}
-
-.modal form h2 {
+.partners h2{
+    color: #7FB154;
     font-size: 30px;
+    text-align: center;
     line-height: 50px;
-    color: #7FB154;
     font-family: 'BebasNeue-Bold';
-    margin-bottom: 25px;
-}
-
-.modal form p {
-    font-size: 16px;
-    line-height: 30px;
-    font-family: 'SF UI Regular';
-    color: #9D9D9D;
-    margin-bottom: 25px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 
-@media (min-width: 576px) {
 
-    .modal-dialog {
-        max-width: 80%;
-        margin: auto;
-    }
-}
-@media (max-width: 575px) {
-    .modal-form {
-        padding: 15px;
-    }
-    .modal form button {
-        font-size: 14px;
-    }
-    
-    .modal form input::placeholder,
-    .modal form textarea::placeholder {
-        font-size: 14px;
-    }
-    
-    .modal form h2 {
-        font-size: 22px;
-    }
-    
-    .modal form p {
-        font-size: 14px;
-}
+
+
+
+
 
 
 
@@ -296,7 +187,7 @@ body {
     }
 
     .day-project img {
-        box-shadow: 60px -30px rgba(127, 177, 84, 0.5);
+        box-shadow: -60px -30px #E5E5E5;
     }
 
     .day-project-text h3 {
@@ -658,7 +549,7 @@ body {
     }
 
     .day-project img {
-        box-shadow: 27px -35px rgba(127, 177, 84, 0.5);
+        box-shadow: -27px -30px #E5E5E5;
     }
 
     .day-project-text a {
