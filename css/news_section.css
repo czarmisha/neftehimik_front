@@ -60,21 +60,34 @@
     left: 0;
     right: 0;
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: rgba(26, 69, 0, 0.6);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
 .news-poster:hover .news-hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
 }
 
 .all-news a {
     font-size: 16px;
     line-height: 16px;
+    -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     font-family: 'BebasNeue-Regular';
     color: #6B6B6B;

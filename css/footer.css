@@ -6,12 +6,15 @@
 .footer-sicial li {
     margin: 0 10px;
 }
+
 .slidel-social-link {
     display: block;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 1px solid #686868;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
