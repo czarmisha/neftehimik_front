@@ -9,16 +9,17 @@
     font-family: 'BebasNeue-Regular';
     margin-bottom: 70px;
     position: relative;
+    width: 100%;
 }
 
 .about-us h2::before {
     content: 'О КОМПАНИИ';
     position: absolute;
     top: -100%;
-    right: -150%;
+    right: -10%;
     color: rgba(104, 104, 104, 0.1);
-    font-size: 60px;
-    width: 200%;
+    font-size: 1.5em;
+    width: 100%;
 }
 
 .about-us-text p {
@@ -52,7 +53,7 @@
 }
 
 
-.about-us-shadows::before {
+/* .about-us-shadows::before {
     content: '';
     position: absolute;
     width: 50%;
@@ -70,4 +71,4 @@
     border: 6px solid #7FB154;
     bottom: -7%;
     right: -9%;
-}
+} */

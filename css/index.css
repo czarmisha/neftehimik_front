@@ -30,6 +30,49 @@ body {
 }
 
 
+
+.catalog h2,
+.advantages h2,
+.reviews h2 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #7FB154;
+    font-family: 'BebasNeue-Regular';
+    position: relative;
+    width: 100%;
+}
+
+.advantages h2,
+.reviews h2 {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.reviews h2::before,
+.advantages h2::before,
+.catalog h2::before {
+    position: absolute;
+    top: -110%;
+    color: rgba(104, 104, 104, 0.1);
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.reviews h2::before {
+    content: 'ОТЗЫВЫ';
+    right: 5%;
+}
+
+.advantages h2::before {
+    content: 'ПРЕИМУЩЕСТВА НАШЕЙ КОМПАНИИ';
+    right: 0%;
+}
+
+.catalog h2::before {
+    content: 'КАТАЛОГ ТОВАРОВ';
+    right: 0;
+}
+
 /*! ------------------------------------------------------------ HEADER start -------------------------------------------------------------- */
 
 .slider-social {
@@ -181,26 +224,27 @@ body {
     padding: 45px 0 50px 0;
 }
 
-.catalog h2 {
+/* .catalog h2 {
     font-size: 36px;
     line-height: 36px;
     color: #7FB154;
     font-family: 'BebasNeue-Regular';
     /* margin-bottom: 70px; */
-    position: relative;
-}
+/* position: relative; */
+/* width: 100%; */
+/* } */
 
 .catalog h2::before {
     content: 'КАТАЛОГ ТОВАРОВ';
     position: absolute;
     top: -100%;
-    right: -50%;
+    right: 0;
     color: rgba(104, 104, 104, 0.1);
-    font-size: 60px;
-    width: 200%;
+    font-size: 1.5em;
+    width: 100%;
 }
 
-.catalog-box {
+*/ .catalog-box {
     background-color: white;
     position: relative;
 
@@ -338,18 +382,12 @@ body {
 
 /*! ------------------------------------------------------------ CATALOG end -------------------------------------------------------------- */
 
-
-/*! ------------------------------------------------------------ DAY PROJECT start -------------------------------------------------------------- */
-
-
-
-/*! ------------------------------------------------------------ DAY PROJECT end -------------------------------------------------------------- */
 /*! ------------------------------------------------------------ ADVANTAGES start -------------------------------------------------------------- */
 .advantages {
     padding: 100px 0 50px;
 }
 
-.advantages h2 {
+/* .advantages h2 {
     font-size: 36px;
     line-height: 36px;
     color: #7FB154;
@@ -366,9 +404,9 @@ body {
     top: -110%;
     right: 0%;
     color: rgba(104, 104, 104, 0.1);
-    font-size: 60px;
+    font-size: 1.2em;
     width: 100%;
-}
+} */
 
 .advantages-box {
     position: relative;
@@ -440,7 +478,7 @@ body {
     align-items: flex-start;
 }
 
-.reviews h2 {
+/* .reviews h2 {
     font-size: 36px;
     line-height: 36px;
     color: #7FB154;
@@ -448,17 +486,18 @@ body {
     margin-bottom: 70px;
     position: relative;
     text-align: center;
+    width: 100%;
 }
 
 .reviews h2::before {
     content: 'ОТЗЫВЫ';
     position: absolute;
     top: -110%;
-    right: 15%;
+    right: 5%;
     color: rgba(104, 104, 104, 0.1);
-    font-size: 60px;
-    width: 200%;
-}
+    font-size: 1.5em;
+    width: 100%;
+} */
 
 .reviews-slider-img {
     margin-right: 30px;
@@ -550,21 +589,6 @@ body {
 }
 
 /*! ------------------------------------------------------------ REVIEWS end -------------------------------------------------------------- */
-/*! ------------------------------------------------------------ NEWS start -------------------------------------------------------------- */
-
-
-
-
-/*! ------------------------------------------------------------ NEWS end -------------------------------------------------------------- */
-/*! ------------------------------------------------------------ CONTACT start -------------------------------------------------------------- */
-
-
-/*! ------------------------------------------------------------ CONTACT end -------------------------------------------------------------- */
-/*! ------------------------------------------------------------ FOOTER start -------------------------------------------------------------- */
-
-
-/*! ------------------------------------------------------------ FOOTER end -------------------------------------------------------------- */
-
 
 
 /*!  media  */
@@ -599,11 +623,11 @@ body {
         font-size: 18px;
     }
 
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: -9%;
         right: -4%;
         height: 83%;
-    }
+    } */
 
     .review-text {
         margin: 20px 0;
@@ -660,14 +684,14 @@ body {
         margin-top: 5 0px;
     }
 
-    .about-us-shadows::after,
+    /* .about-us-shadows::after,
     .about-us-shadows::before {
         height: 80%;
     }
 
     .about-us-shadows::after {
         bottom: -5%;
-    }
+    } */
 
     .about-us-statistic {
         margin-top: 40px;
@@ -774,14 +798,14 @@ body {
         padding: 15px;
     }
 
-    .about-us-shadows::after,
+    /* .about-us-shadows::after,
     .about-us-shadows::before {
         height: 60%;
     }
 
     .about-us-shadows::after {
         bottom: 10%;
-    }
+    } */
 
     .about-us-statistic {
         margin-top: 40px;
@@ -802,10 +826,6 @@ body {
     }
 
     .reviews-slider-buttons {
-        /* width: 100px;
-        height: 65px;
-        bottom: -10px;
-        left: -30px; */
         display: none;
     }
 
@@ -873,7 +893,7 @@ body {
 }
 
 @media(max-width:991px) {
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 34%;
         right: -6%;
         width: 100%;
@@ -882,21 +902,18 @@ body {
 
     .about-us-shadows::before {
         display: none;
-    }
+    } */
 
     .about-us h2 {
-        /* margin-top: 50px; */
         text-align: center;
-        width: 100%;
+    }
+
+    .about-us h2::before {
+        right: 0;
     }
 
     .about-us-img {
         margin-bottom: 100px;
-    }
-
-    .about-us h2::before {
-        width: 100%;
-        right: 0;
     }
 
     .statistic-number {
@@ -923,18 +940,18 @@ body {
         height: 70px;
     }
 
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 36%;
         height: 50%;
-    }
+    } */
 }
 
 @media(max-width:881px) {
 
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 39%;
         height: 48%;
-    }
+    } */
 }
 
 @media(max-width:850px) {
@@ -948,10 +965,10 @@ body {
 }
 
 @media(max-width:767px) {
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 41%;
         height: 45%;
-    }
+    } */
 
     .reviews-slider-img {
         margin-right: 0;
@@ -982,18 +999,18 @@ body {
         padding: 15px;
     }
 
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 44%;
         height: 45%;
-    }
+    } */
 }
 
 @media(max-width:700px) {
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 47%;
         height: 40%;
         width: 95%;
-    }
+    } */
 
     .burger-menu .form-inline {
         width: 90%;
@@ -1026,9 +1043,6 @@ body {
         padding: 15px 37px;
     }
 
-    .advantages h2::before {
-        font-size: 50px;
-    }
 }
 
 @media(max-width:600px) {
@@ -1036,32 +1050,19 @@ body {
         font-size: 30px;
     }
 
-    .advantages h2::before {
-        display: none;
-    }
-
-    .reviews h2::before {
-        /* top: -110%;
-        right: 75%;
-        color: rgba(104, 104, 104, 0.1);
-        font-size: 46px;
-        width: 100%; */
-        display: none;
-    }
-
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 50%;
         height: 36%;
         width: 95%;
-    }
+    } */
 }
 
 @media(max-width:560px) {
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 53%;
         height: 33%;
         width: 95%;
-    }
+    } */
 }
 
 @media(max-width:526px) {
@@ -1090,10 +1091,10 @@ body {
         padding: 8px 12px;
     }
 
-    .about-us-shadows::after {
+    /* .about-us-shadows::after {
         bottom: 56%;
         height: 30%;
-    }
+    } */
 
     .about-us-statistic {
         justify-content: space-around !important;
@@ -1103,14 +1104,7 @@ body {
         margin-top: 20px;
     }
 
-    .catalog h2::before {
-        /* right: -50%;
-        font-size: 28px;
-        width: 200%; */
-        display: none;
-    }
-
-    .about-us {
+    */ .about-us {
         padding-bottom: 50px;
     }
 
@@ -1122,16 +1116,8 @@ body {
         font-size: 30px;
     }
 
-    .day-project-text h2::before {
-        font-size: 35px;
-    }
-
     .about-us h2 {
         font-size: 30px;
-    }
-
-    .about-us h2::before {
-        display: none;
     }
 
     .reviews h2 {
@@ -1144,24 +1130,12 @@ body {
         padding: 50px 0;
     }
 
-    .reviews h2::before {
-        display: none;
-    }
-
     .news h2 {
         font-size: 30px;
     }
 
-    .news h2::before {
-        font-size: 35px;
-    }
-
     .contact h2 {
         font-size: 30px;
-    }
-
-    .contact h2::before {
-        display: none;
     }
 
     .review-text {
@@ -1194,68 +1168,7 @@ body {
 }
 
 @media(max-width:515px) {
-    .about-us-shadows::after {
-        bottom: 58%;
-        height: 28%;
-    }
-
     .about-us-statistic {
         margin-top: 30px;
-    }
-
-    .reviews h2::before {
-        right: 55%;
-    }
-}
-
-@media(max-width:480px) {
-    .about-us-shadows::after {
-        bottom: 61%;
-        height: 26%;
-    }
-}
-
-@media(max-width:450px) {
-    .about-us-shadows::after {
-        bottom: 62%;
-        height: 25%;
-    }
-}
-
-@media(max-width:420px) {
-    .about-us-shadows::after {
-        bottom: 65%;
-        height: 22%;
-    }
-}
-
-@media(max-width:390px) {
-    .about-us-shadows::after {
-        bottom: 67%;
-        height: 20%;
-    }
-}
-
-@media(max-width:375px) {
-    .about-us-shadows::after {
-        bottom: 69%;
-        height: 18%;
-    }
-}
-
-@media(max-width:355px) {
-    .about-us-shadows::after {
-        bottom: 71%;
-        height: 18%;
-        width: 93%;
-    }
-
-}
-
-@media(max-width:337px) {
-    .about-us-shadows::after {
-        bottom: 75%;
-        height: 16%;
-        width: 92%;
     }
 }
